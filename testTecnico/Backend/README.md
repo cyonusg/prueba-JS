@@ -18,14 +18,20 @@ Para realizar esta prueba, se creo una app, la cual:
 - Ultima version estable NodeJS.
 - MongoDB.
 
-### Instalacion de FrontEnd
+### Instalacion de BackEnd.
+
 ```sh
-$ cd testTecnico/FrontEnd
-$ yarn install
+$ cd testTecnico/Backend
+$ npm install
 ```
-#### Iniciar React Native
+#### Iniciar el API
+sin liveReload
 ```sh
-$ yarn start
+$ node src/index.js
+```
+con live Reload
+```sh
+$ npm start
 ```
 
 License

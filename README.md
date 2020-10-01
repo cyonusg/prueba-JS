@@ -18,6 +18,22 @@ Para realizar esta prueba, se creo una app, la cual:
 - Ultima version estable NodeJS.
 - MongoDB.
 
+### Instalacion de BackEnd.
+
+```sh
+$ cd testTecnico/Backend
+$ npm install
+```
+#### Iniciar el API
+sin liveReload
+```sh
+$ node src/index.js
+```
+con live Reload
+```sh
+$ npm start
+```
+
 ### Instalacion de FrontEnd
 ```sh
 $ cd testTecnico/FrontEnd
