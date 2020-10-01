@@ -1,10 +1,4 @@
-const multiplicacion = (x) => 
-    function(y) {
-        if (typeof y !== 'undefined') {
-            x = x * y;
-            return arguments.callee;
-        } else { return x; }
-    }
+const multiplicacion = (a) => (b) => (c) => a * b * c;
 
 const stringMasLargo = (array) => array.reduce((accumulator, currentValue) => {
     let prevValue = typeof accumulator == 'string' ? accumulator.length : accumulator;
@@ -14,6 +8,7 @@ const stringMasLargo = (array) => array.reduce((accumulator, currentValue) => {
 const multiplicaPalabra = (string, iteraciones) => {
     let stringFinal = string;
     for(let index = 1; iteraciones > index; index++) {
+        console.log(`${stringFinal}${string}`);
         stringFinal = `${stringFinal}${string}`;
     }
     return stringFinal
@@ -32,9 +27,9 @@ const numerosUnicos = (array1,array2) => {
 }
 
 //Ejercicio 1 
-console.log(multiplicacion(2)(5)(3)(),'Argumentos: 2 , 5 , 3');
-console.log(multiplicacion(4)(2)(2)(),'Argumentos: 4 , 2 , 2');
-console.log(multiplicacion(8)(2)(1)(),'Argumentos: 8 , 2 , 1');
+console.log(multiplicacion(2)(5)(3),'Argumentos: 2 , 5 , 3');
+console.log(multiplicacion(4)(2)(2),'Argumentos: 4 , 2 , 2');
+console.log(multiplicacion(8)(2)(1),'Argumentos: 8 , 2 , 1');
 
 //Ejercicio 2
 const list = ['best', 'company','ever'];

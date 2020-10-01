@@ -1,0 +1,2 @@
+export const GET_ALL_CHAMP = 'GET_ALL_CHAMP';
+export const GET_ALL_CHAMP_ASYNC = 'GET_ALL_CHAMP_ASYNC';
